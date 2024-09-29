@@ -1,0 +1,339 @@
+ul {
+    margin: 0px;
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+}
+
+@import url(assets/css/about_us.css);
+
+@font-face {
+    font-family: rrs;
+    src: url(assets/fonts/Raleway-Medium.ttf);
+}
+
+div {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width:999px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 50px;
+        background-color: burlywood;
+    }
+
+    .main>.nav>.tabs {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: flex-start;
+        background-color: antiquewhite;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .main>.nav>.logo>.link>.img {
+        display: none;
+    }
+
+    .main>.footer>.foot>.footer-tab {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .main {
+        margin: 0px;
+    }
+
+    .main>.nav {
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        padding-inline: 10px;
+    }
+
+    .main>.nav>.logo {}
+
+    .main>.nav>.logo>.link {}
+
+    .main>.nav>.logo>.link>.img {
+        height: 40px;
+    }
+
+    .main>.nav>.tabs {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        font-family: rrs;
+    }
+
+    .main>.nav>.tabs>.icon {}
+
+    .main>.nav>.tabs>.icon>.img {
+        height: 20px;
+    }
+
+    .main>.nav>.tabs>.tab {
+        padding: 20px;
+    }
+
+    .main>.nav>.tabs>.tab:hover {
+        z-index: 11px;
+        background-color: aqua;
+    }
+
+    .main>.nav>.tabs>.icon>.link>.img {
+        height: 70px;
+        padding: 10px;
+    }
+
+    .main>.mid {
+        padding: 51px;
+    }
+
+
+    .mid>.first-container {
+        background-image: url(assets/img/background1.jpeg);
+        background-size: cover;
+        height: 300px;
+    }
+
+    .mid>.first-container>.head {
+        position: absolute;
+        right: 350px;
+        top: 350px;
+    }
+
+    .second-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "heading heading heading"
+            "chef1 chef2 chef3"
+            "chef1 chef2 chef3";
+        background-color: azure;
+        font-size: 20px;
+    }
+
+    .heading {
+        grid-area: heading;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading>.head {
+        font-size: 40px;
+        color: #7f1146;
+        font-family: rrs;
+        font-style: italic;
+    }
+
+    .chef1 {
+        grid-area: chef1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .chef1:hover {
+        background-color: darkred;
+        color: #fff;
+    }
+
+    .chef1>.image {
+        height: 350px;
+        width: 400px;
+    }
+
+    .chef1>.button {
+        border: none;
+        border-radius: 50px;
+        width: 100px;
+    }
+
+    .chef2 {
+        grid-area: chef2;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .chef2>.image {
+        height: 350px;
+        width: 400px;
+    }
+
+    .chef2>.button {
+        border: none;
+        border-radius: 50px;
+        width: 100px;
+    }
+
+    .chef2:hover {
+        background-color: darkred;
+        color: #fff;
+    }
+
+    .chef3 {
+        grid-area: chef3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .chef3>.image {
+        height: 350px;
+        width: 400px;
+    }
+
+    .chef3>.button {
+        border: none;
+        border-radius: 50px;
+        width: 100px;
+    }
+
+    .chef3:hover {
+        background-color: darkred;
+        color: #fff;
+    }
+
+    .reason-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .5fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "heading heading heading heading"
+            "cook service booking support";
+        background-color: aliceblue;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading {
+        grid-area: heading;
+        font-size: 50px;
+        color: brown;
+        margin: 0px;
+    }
+
+    h4 {
+        margin: 0px;
+    }
+
+    .cook {
+        grid-area: cook;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cook>.link>.icook {
+        height: 250px;
+        justify-self: center;
+    }
+
+    .service {
+        grid-area: service;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service>.link>.iservice {
+        height: 250px;
+        justify-self: center;
+    }
+
+    .booking {
+        grid-area: booking;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking>.link>.ibooking {
+        height: 250px;
+        justify-self: center;
+    }
+
+    .support {
+        grid-area: support;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .support>.link>.isupport {
+        height: 250px;
+        justify-self: center;
+    }
+
+    .main>.footer {
+        border-top: 2px solid blue;
+        background-color: #333;
+        color: #fff;
+
+    }
+
+    .main>.footer>.foot {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .main>.footer>.foot>.quick {}
+
+    .main>.footer>.foot>.footer-tab {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+
+    .main>.footer>.foot>.footer-tab>.tab>.link {
+        color: #fff;
+    }
+
+    .main>.footer>.foot>.footer-tab>.tab>.link:hover {
+        z-index: 12px;
+
+        color: crimson;
+        font-family: rrs;
+        overflow-x: hidden;
+    }
+}
