@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>
+        Login For Clients
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="forgot-password.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+
+            <div class="inputbox">
+                <input type="text" placeholder="UserName" required>
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="email" placeholder="E-mail or Mobile" required>
+                <i class="bx bxs-envelope"></i>
+            </div>
+            <div class="RadioClientService">
+                <div class="Client">
+                    Client
+                    <input type="radio" checked=true name="Customer/Provider">
+                </div>
+                <div class="Rasoiya">
+                    Rasoiya
+                    <input type="radio" name="Customer/Provider">
+                </div>
+            </div>
+            <button type="submit" class="btn" id="generateOTPBtn">Generate OTP</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('generateOTPBtn').addEventListener('click', function () {
+            var username = document.getElementById('usernameInput').value;
+            var email = document.getElementById('emailInput').value;
+
+            // Here you can add code to generate and send OTP
+            // For demonstration, let's just log the username and email
+            console.log("Username:", username);
+            console.log("Email:", email);
+
+            // You can replace the above code with your actual OTP generation logic
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>
+        Login For Clients
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="sign_in-style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+
+            <div class="inputbox">
+                <input type="text" placeholder="UserName" id="username" required>
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="password" placeholder="PassWord" id="password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="RadioClientService">
+                <div class="Client">
+                    Client
+                    <input type="radio" checked=true name="Customer/Provider">
+                </div>
+                <div class="Rasoiya">
+                    Rasoiya
+                    <input type="radio" name="Customer/Provider">
+                </div>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me<!-- .Will you? --></label>
+                <a href="forgot-passwod.html">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn" onclick="something()"><a href="../../index.html">Login</a></button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+            <div class="register-link">
+                <p>Don't have an account?Try <a href="https://forms.gle/g9MH1Zops46hkbum9">Login with Forms</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        function something() {
+            // Select the form
+            const form = document.querySelector('form');
+
+            // Add event listener to the form submission
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting
+
+                // Get the input values
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // You can add more validation here if needed
+
+                // Create an object to hold the user data
+                const userData = {
+                    username: username,
+                    password: password
+                };
+
+                // Convert the data to JSON format
+                const jsonData = JSON.stringify(userData);
+
+                // Store the data in localStorage
+                localStorage.setItem('userData', jsonData);
+
+                // Optionally, you can clear the form fields after submission
+                form.reset();
+
+                // Inform the user that data has been stored
+                alert('Data stored successfully');
+            });
+        };
+    </script>
+</body>
+
+</html>

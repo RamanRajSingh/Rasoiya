@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            height: 70px;
+            background-color: black;
+            color: rgb(211, 221, 217);
+            font-family: sans-serif;
+
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 25px 14px;
+            font-size: 20px;
+        }
+
+        .navbar ul li a {
+            color: aliceblue;
+            text-decoration: none;
+
+        }
+
+        .left {
+            color: black;
+            height: 42vh;
+            width: 50vh;
+            margin: auto;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .left {
+            background-image: url(imag2.jpg);
+            background-size: cover;
+            background-position: center;
+
+
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            margin-top: 50vh;
+        }
+
+
+        .container {
+            color: azure;
+
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            margin-top: 20px;
+            height: 50vh;
+            width: 50vw;
+            background-image: url(imag.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+    </style>
+
+
+<body class="main">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../index.html" class="link">
+                <img src="../icon/Yellow and White Minimalist Kitchen Logo.png" alt="xyz" class="img">
+            </a>
+        </div>
+        <ul class="tabs">
+            <li class="tab"><a href="../../index.html" class="link">Home</a></li>
+            <li class="tab"><a href="about_us.html" class="link">About Us</a></li>
+            <li class="tab"><a href="register.html" class="link">Registration</a></li>
+            <li class="tab"><a href="payment.html" class="link">Payment</a></li>
+            <li class="tab"><a href="recipee.html" class="link">Recipe</a></li>
+            <li class="tab"><a href="customer.html" class="link">Contact Us</a></li>
+        </ul>
+        <ul class="tabs-1"></ul>
+    </nav>
+    <!-- <div class="navbar">
+    <h1>payment</h1> -->
+
+
+    </div>
+    <div class="container">
+        <h3>Billing Address:</h3>
+        <br>
+
+        <span>Full Name:</span>
+        <input type="text" placeholder="name">
+
+        <br>
+
+        <span>Email:</span>
+        <input type="text" placeholder="email-id">
+
+        <br>
+
+        <span>Address:</span>
+        <input type="text" placeholder="street-room-locality">
+        <br>
+
+
+        <span>City:</span>
+        <input type="text" placeholder="jaipur">
+        <br>
+
+        <span>Zip Code:</span>
+        <input type="text" placeholder="123-456">
+        <br>
+        <br>
+        <input type="submit" value="Proceed for payment" class="submit">
+    </div>
+
+    <div class="left">
+        <h3>Payment:</h3>
+        <BR>
+
+
+        <span>Name on Card:</span>
+        <input type="text" placeholder="name">
+
+        <BR>
+
+        <span>Credit Card Number:</span>
+        <input type="number" placeholder="1111-2222-3333-4444">
+
+        <br>
+
+        <span>Expiry Month:</span>
+        <input type="text" placeholder="january">
+
+        <br>
+
+        <span>Expiry Year:</span>
+        <input type="number" placeholder="2025">
+
+        <br>
+
+        <span>CVV:</span>
+        <input type="number" placeholder="1234">
+
+        <br>
+        <br>
+        <input type="submit" value="Submit" class="submit">
+
+    </div>
+
+</body>
+
+</html>

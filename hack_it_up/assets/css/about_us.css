@@ -1,0 +1,96 @@
+@media screen and (min-width: 1100px) {
+    .main {
+        width: 1510px;
+    }
+
+    .main>.midd {
+        padding-inline: 100px;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/background.jpeg);
+        background-size: cover;
+    }
+
+    .main>.midd>.para-1 {
+        backdrop-filter: blur(2px);
+        background-color: rgba(238, 231, 201, 0.423);
+        width: 1100px;
+        padding-inline: 20px;
+    }
+
+    .main>.midd>.para-1>.head {
+        font-size: 50px;
+    }
+
+    .main>.midd>.para-1>.para {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .main>.midd>.para-2 {
+        backdrop-filter: blur(2px);
+        background-color: rgba(238, 231, 201, 0.423);
+        width: 1100px;
+        padding-inline: 20px;
+        margin-top: 10px;
+    }
+
+    .main>.midd>.para-2>.head {}
+
+    .main>.midd>.para-2>.para {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .main>.midd>.para-3 {
+        backdrop-filter: blur(2px);
+        background-color: rgba(238, 231, 201, 0.423);
+        width: 1100px;
+        padding-inline: 20px;
+        margin-top: 10px;
+    }
+
+    .main>.midd>.para-3>.head {}
+
+    .main>.midd>.para-3>.para {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .main>.midd>.para-3>.image {
+        width: 700px;
+    }
+
+    .main>.midd>.para-4 {
+        backdrop-filter: blur(2px);
+        background-color: rgba(238, 231, 201, 0.423);
+        width: 1100px;
+        padding-inline: 20px;
+        margin-top: 10px;
+    }
+
+    .main>.midd>.para-4>.head {}
+
+    .main>.midd>.para-4>.para {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .main>.midd>.para-5 {
+        backdrop-filter: blur(2px);
+        background-color: rgba(238, 231, 201, 0.423);
+        width: 1100px;
+        padding-inline: 20px;
+        margin-top: 10px;
+    }
+
+    .main>.midd>.para-5>.head {
+        font-weight: 700px;
+    }
+
+    .main>.midd>.para-5>.para {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+}
